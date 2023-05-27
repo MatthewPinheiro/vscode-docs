@@ -15,7 +15,14 @@ The presence of `jsconfig.json` file in a directory indicates that the directory
 
 > **Tip:** If you are not using JavaScript, you do not need to worry about `jsconfig.json`.
 
-> **Tip:** `jsconfig.json` is a descendant of [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html), which is a configuration file for TypeScript. `jsconfig.json` is `tsconfig.json` with `"allowJs"` attribute set to `true`.
+> **Tip:** `jsconfig.json` is a descendant of [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html), which is a configuration file for TypeScript. `jsconfig.json` is `tsconfig.json` with the following defaults:
+> - `allowJs: true`
+> - `maxNodeModuleJsDepth: 2`
+> - `allowSyntheticDefaultImports: true`
+> - `skipLibCheck: true`
+> - `noEmit: true`
+
+
 
 ## Why do I need a jsconfig.json file?
 
